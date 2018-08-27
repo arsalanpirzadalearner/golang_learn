@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Sqrt(x float64) float64 {
+func sqrt(x float64) float64 {
 	z := float64(1)
 	zprev := z
 	z -= (z*z - x) / (2 * z)
@@ -19,5 +19,5 @@ func Sqrt(x float64) float64 {
 }
 
 func main() {
-	fmt.Println(Sqrt(144))
+	fmt.Println(sqrt(144))
 }
